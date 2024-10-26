@@ -15,10 +15,13 @@
             height: 100%;
             z-index: -1;
             background-color: #000;
-        }
+        }  
         .container-center {
             position: relative;
             z-index: 1;
+        }
+        .btn:focus,input:focus {
+            box-shadow: none !important;
         }
     </style>
 </head>
@@ -47,7 +50,7 @@
         <button id="convert" class="btn btn-primary btn-block mt-3">Convert</button>
         <button id="reset" class="btn btn-secondary btn-block mt-2">Reset</button>
 
-        <div id="result" class="text-center mt-3 font-weight-bold"></div>
+        <div id="result" class="text-center mt-3 font-weight-bold text-success"></div>
         <div id="error-message" class="text-center text-danger mt-2"></div>
     </div>
     <div class="fixed-bottom w-100">
